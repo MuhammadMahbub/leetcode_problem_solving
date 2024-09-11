@@ -2,15 +2,15 @@
 
 function removeDuplicates(&$nums) {
         
-    $uniqueArray = [];
+    $arr = [];
 
     foreach ($nums as $value) {
-        if (!isset($uniqueArray[$value])) {
-            echo $uniqueArray[] = $value;
+        if (!isset($arr[$value])) {
+            echo $arr[] = $value;
         }
     }
 
-    return count($uniqueArray);
+    return count($arr);
 
     // ==================================================
     
