@@ -15,5 +15,5 @@ function mySqrt($x) {
     return $i-1;  
 }
 
-$x = 4;
+$x = 10;
 echo mySqrt($x);
