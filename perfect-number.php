@@ -1,5 +1,5 @@
 <?php 
-// leetcode hang korse with this code
+// leetcode hang korse ------------------------------
 function checkPerfectNumber($num) {
         $arr = [];
         $c = $num/2;

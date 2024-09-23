@@ -23,6 +23,6 @@ function removeElement(&$nums, $val) {
     return count($nums);
 }
 
-$nums = [3,2,2,3]; 
+$nums = [3,2,2,3,4]; 
 $val = 2;
 echo removeElement($nums, $val);
