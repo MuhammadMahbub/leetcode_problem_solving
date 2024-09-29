@@ -9,14 +9,16 @@ function findRestaurant($list1, $list2) {
             }
         }
     }
-    $minValue = min($counts);
-    $newarr = [];
-    foreach($counts as $key=>$c){
-        if($c == $minValue){
-            $newarr[]=$key;
-        }
-    }
-    print_r([$newarr]);
+    $minValue = min($counts); //1 
+    return array_keys($counts, $minValue);
+
+    // $newarr = [];
+    // foreach($counts as $key=>$c){
+    //     if($c == $minValue){
+    //         $newarr[]=$key;
+    //     }
+    // }
+    // print_r([$newarr]);
 
     // **********************************************************************
     // $minItems = array_filter($counts, function($item) use ($minValue) {
@@ -27,6 +29,6 @@ function findRestaurant($list1, $list2) {
     
 }
 
-$list1 = ["happy","sad","good"]; 
-$list2 = ["sad","happy","good"];
+$list1 = ["happy","a","sad","good"]; 
+$list2 = ["a","sad","happy","good"];
 echo findRestaurant($list1, $list2);
